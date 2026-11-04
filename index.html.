@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroGuía | Conocimiento agronómico</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f8f4;
+  color: #263b2c;
+}
+
+header {
+  background: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5ece3;
+}
+
+.logo {
+  color: #267344;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #82a98a;
+}
+
+nav a {
+  color: #435849;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 22px 40px;
+  text-align: center;
+}
+
+.tag {
+  color: #398653;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  margin-bottom: 16px;
+  color: #244c31;
+}
+
+.hero p {
+  color: #69786d;
+  max-width: 620px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 20px 22px 65px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 25px 0 30px;
+  font-size: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e4ece3;
+  border-radius: 16px;
+  padding: 28px;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  color: #286b40;
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+
+.card p {
+  color: #68776d;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.btn {
+  display: inline-block;
+  background: #347d4b;
+  color: white;
+  padding: 11px 19px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #245f37;
+}
+
+.assistant {
+  background: #e8f1e7;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.assistant h3 {
+  color: #286b40;
+  margin-bottom: 10px;
+}
+
+.assistant p {
+  color: #68776d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  background: white;
+  padding: 23px;
+  color: #78877b;
+  font-size: 12px;
+  border-top: 1px solid #e5ece3;
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 17px 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 48px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Agro<span>Guía</span> 🌱</div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#modulos">Consultas</a>
+    <a href="#asistente">Asistente</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="tag">CONOCIMIENTO AGRONÓMICO A TU ALCANCE</div>
+  <h1>¡Bienvenido a AgroGuía!</h1>
+  <p>
+    Aprende a reconocer las deficiencias nutricionales
+    y las plagas que afectan tus cultivos.
+    Encuentra información agronómica de manera sencilla
+    y práctica.
+  </p>
+</section>
+
+<main id="modulos">
+  <h2 class="section-title">¿Qué deseas consultar?</h2>
+
+  <div class="cards">
+
+    <article class="card">
+      <div class="card-icon">🌿</div>
+      <h3>Nutrición vegetal</h3>
+      <p>
+        Aprende a identificar las deficiencias nutricionales
+        de las plantas, reconocer sus síntomas y comparar
+        las características de cada nutriente.
+      </p>
+      <a class="btn" href="#" onclick="alert('Próximamente: módulo de nutrición vegetal'); return false;">
+        Consultar módulo
+      </a>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">🐛</div>
+      <h3>Identificación de plagas</h3>
+      <p>
+        Conoce las principales plagas agrícolas,
+        sus características, cultivos afectados,
+        daños y alternativas de manejo integrado.
+      </p>
+      <a class="btn" href="#" onclick="alert('Próximamente: módulo de identificación de plagas'); return false;">
+        Consultar módulo
+      </a>
+    </article>
+
+  </div>
+
+  <section class="assistant" id="asistente">
+    <h3>🤖 Asistente AgroGuía</h3>
+    <p>
+      Muy pronto podrás consultar tus dudas sobre nutrición
+      vegetal y plagas agrícolas con ayuda de inteligencia artificial.
+    </p>
+  </section>
+</main>
+
+<footer>
+  AgroGuía © 2026 · Conocimiento agronómico a tu alcance 🌱
+</footer>
+
+</body>
+</html>
